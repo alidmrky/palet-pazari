@@ -148,7 +148,16 @@ LogSchema.index({ ipAddress: 1, level: 1, createdAt: -1 });
 // TTL index - 90 gün sonra otomatik sil
 LogSchema.index({ createdAt: 1 }, { expireAfterSeconds: 90 * 24 * 60 * 60 });
 
-// Model oluştur
-export const Log = mongoose.models.Log || mongoose.model<ILog>('Log', LogSchema);
+// Aynı database'de model oluştur
+let LogModel: mongoose.Model<ILog>;
+
+export const Log = async () => {
+  if (!LogModel) {
+    const { connectToLogMongoDB } = await import('@/packages/libs/Database/log-mongodb');
+    await connectToLogMongoDB();
+    LogModel = mongoose.models.Log || mongoose.model<ILog>('Log', LogSchema);
+  }
+  return LogModel;
+};
 
 export default Log;

@@ -1,0 +1,1175 @@
+{
+  "_meta": {
+    "versiyon": "1.2",
+    "olusturma_tarihi": "2025-10-14",
+    "olcu_birimleri": "mm, kg",
+    "aciklama": "Lojistik palet katalogu: bölge→standart→model→varyant→teknik detaylar (geniş ve okunabilir)."
+  },
+  "kategoriler": [
+    {
+      "kategori_id": "EU",
+      "ad": "Avrupa Ekosistemi",
+      "aciklama": "EPAL/EUR ve Avrupa perakende ekosistemi",
+      "standartlar": [
+        {
+          "standart_id": "EPAL",
+          "ad": "EPAL / EUR Standartları",
+          "yonetici_kurum": "European Pallet Association (EPAL)",
+          "notlar": "ISPM 15 ısıl işlem; kalite damgalı.",
+          "modeller": [
+            {
+              "model_id": "EUR1",
+              "ad": "Euro Palet (EUR 1)",
+              "olcu": {
+                "u": 1200,
+                "g": 800,
+                "y": 144
+              },
+              "kullanim": {
+                "havuz": false,
+                "tip": [
+                  "cok_kullanimlik"
+                ],
+                "sektor": [
+                  "perakende",
+                  "FMCG",
+                  "genel_loji̇sti̇k"
+                ]
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "EUR1_AHSAP_STANDART",
+                  "malzeme": "ahsap",
+                  "yuzey": "pürüzlü",
+                  "agirlik_kg": 22,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 4000,
+                    "raf": 1000
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sag"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ],
+                      "tahta_araliklari": [
+                        0,
+                        120,
+                        120,
+                        120
+                      ]
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ]
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "olcu": {
+                        "u": 100,
+                        "g": 145,
+                        "y": 78
+                      },
+                      "dizilim": "3x3"
+                    },
+                    "civi": {
+                      "adet": 78,
+                      "tip": "spiral"
+                    },
+                    "forklift_acikliklari": {
+                      "sol_sag_yukseklik": 100,
+                      "on_arka_yukseklik": 90
+                    },
+                    "toleranslar": {
+                      "uzunluk": "±5",
+                      "genislik": "±3",
+                      "yukseklik": "±3"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": true,
+                    "gida_hijyen": "orta"
+                  }
+                },
+                {
+                  "varyant_id": "EUR1_PLASTIK_HIJYENIK",
+                  "malzeme": "plastik",
+                  "yuzey": "kapalı_delikli",
+                  "agirlik_kg": 18,
+                  "kapasite_kg": {
+                    "dinamik": 1200,
+                    "statik": 3500,
+                    "raf": 800
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tip": "kapali",
+                      "kaymaz": true
+                    },
+                    "alt_tablo": {
+                      "tip": "tam_ayak"
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "tip": "enjeksiyon_kalip"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": "gereksiz",
+                    "gida_hijyen": "yuksek"
+                  }
+                }
+              ]
+            },
+            {
+              "model_id": "EUR2",
+              "ad": "Euro Palet (EUR 2)",
+              "olcu": {
+                "u": 1200,
+                "g": 1000,
+                "y": 144
+              },
+              "kullanim": {
+                "havuz": false,
+                "tip": [
+                  "cok_kullanimlik"
+                ],
+                "sektor": [
+                  "perakende",
+                  "FMCG",
+                  "genel_loji̇sti̇k"
+                ]
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "EUR2_AHSAP_STANDART",
+                  "malzeme": "ahsap",
+                  "yuzey": "pürüzlü",
+                  "agirlik_kg": 25,
+                  "kapasite_kg": {
+                    "dinamik": 1800,
+                    "statik": 4000,
+                    "raf": 1200
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sag"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ],
+                      "tahta_araliklari": [
+                        0,
+                        120,
+                        120,
+                        120
+                      ]
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ]
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "olcu": {
+                        "u": 100,
+                        "g": 145,
+                        "y": 78
+                      },
+                      "dizilim": "3x3"
+                    },
+                    "civi": {
+                      "adet": 78,
+                      "tip": "spiral"
+                    },
+                    "forklift_acikliklari": {
+                      "sol_sag_yukseklik": 100,
+                      "on_arka_yukseklik": 90
+                    },
+                    "toleranslar": {
+                      "uzunluk": "±5",
+                      "genislik": "±3",
+                      "yukseklik": "±3"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": true,
+                    "gida_hijyen": "orta"
+                  }
+                },
+                {
+                  "varyant_id": "EUR2_PLASTIK_HIJYENIK",
+                  "malzeme": "plastik",
+                  "yuzey": "kapalı_delikli",
+                  "agirlik_kg": 21,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 3500,
+                    "raf": 1000
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tip": "kapali",
+                      "kaymaz": true
+                    },
+                    "alt_tablo": {
+                      "tip": "tam_ayak"
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "tip": "enjeksiyon_kalip"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": "gereksiz",
+                    "gida_hijyen": "yuksek"
+                  }
+                }
+              ]
+            },
+            {
+              "model_id": "EUR3",
+              "ad": "Euro Palet (EUR 3)",
+              "olcu": {
+                "u": 1000,
+                "g": 1200,
+                "y": 144
+              },
+              "kullanim": {
+                "havuz": false,
+                "tip": [
+                  "cok_kullanimlik"
+                ],
+                "sektor": [
+                  "perakende",
+                  "FMCG",
+                  "genel_loji̇sti̇k"
+                ]
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "EUR3_AHSAP_STANDART",
+                  "malzeme": "ahsap",
+                  "yuzey": "pürüzlü",
+                  "agirlik_kg": 25,
+                  "kapasite_kg": {
+                    "dinamik": 1800,
+                    "statik": 4000,
+                    "raf": 1200
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sag"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ],
+                      "tahta_araliklari": [
+                        0,
+                        120,
+                        120,
+                        120
+                      ]
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ]
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "olcu": {
+                        "u": 100,
+                        "g": 145,
+                        "y": 78
+                      },
+                      "dizilim": "3x3"
+                    },
+                    "civi": {
+                      "adet": 78,
+                      "tip": "spiral"
+                    },
+                    "forklift_acikliklari": {
+                      "sol_sag_yukseklik": 100,
+                      "on_arka_yukseklik": 90
+                    },
+                    "toleranslar": {
+                      "uzunluk": "±5",
+                      "genislik": "±3",
+                      "yukseklik": "±3"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": true,
+                    "gida_hijyen": "orta"
+                  }
+                },
+                {
+                  "varyant_id": "EUR3_PLASTIK_HIJYENIK",
+                  "malzeme": "plastik",
+                  "yuzey": "kapalı_delikli",
+                  "agirlik_kg": 21,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 3500,
+                    "raf": 1000
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tip": "kapali",
+                      "kaymaz": true
+                    },
+                    "alt_tablo": {
+                      "tip": "tam_ayak"
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "tip": "enjeksiyon_kalip"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": "gereksiz",
+                    "gida_hijyen": "yuksek"
+                  }
+                }
+              ]
+            },
+            {
+              "model_id": "EUR6",
+              "ad": "Yarım Euro Palet (EUR 6)",
+              "olcu": {
+                "u": 800,
+                "g": 600,
+                "y": 144
+              },
+              "kullanim": {
+                "havuz": false,
+                "tip": [
+                  "cok_kullanimlik"
+                ],
+                "sektor": [
+                  "perakende",
+                  "FMCG",
+                  "genel_loji̇sti̇k"
+                ]
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "EUR6_AHSAP_STANDART",
+                  "malzeme": "ahsap",
+                  "yuzey": "pürüzlü",
+                  "agirlik_kg": 9,
+                  "kapasite_kg": {
+                    "dinamik": 500,
+                    "statik": 1000,
+                    "raf": 300
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sag"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ],
+                      "tahta_araliklari": [
+                        0,
+                        120,
+                        120,
+                        120
+                      ]
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ]
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "olcu": {
+                        "u": 100,
+                        "g": 145,
+                        "y": 78
+                      },
+                      "dizilim": "3x3"
+                    },
+                    "civi": {
+                      "adet": 78,
+                      "tip": "spiral"
+                    },
+                    "forklift_acikliklari": {
+                      "sol_sag_yukseklik": 100,
+                      "on_arka_yukseklik": 90
+                    },
+                    "toleranslar": {
+                      "uzunluk": "±5",
+                      "genislik": "±3",
+                      "yukseklik": "±3"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": true,
+                    "gida_hijyen": "orta"
+                  }
+                },
+                {
+                  "varyant_id": "EUR6_PLASTIK_HIJYENIK",
+                  "malzeme": "plastik",
+                  "yuzey": "kapalı_delikli",
+                  "agirlik_kg": 15,
+                  "kapasite_kg": {
+                    "dinamik": 1200,
+                    "statik": 500,
+                    "raf": 700
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tip": "kapali",
+                      "kaymaz": true
+                    },
+                    "alt_tablo": {
+                      "tip": "tam_ayak"
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "tip": "enjeksiyon_kalip"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": "gereksiz",
+                    "gida_hijyen": "yuksek"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "standart_id": "LPR",
+          "ad": "LPR (La Palette Rouge)",
+          "modeller": [
+            {
+              "model_id": "LPR_EU_1200x800",
+              "ad": "LPR EU 1200x800",
+              "olcu": {
+                "u": 1200,
+                "g": 800,
+                "y": 144
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "LPR_EU_1200x800_AHSAP",
+                  "malzeme": "ahsap",
+                  "kullanim": {
+                    "havuz": true,
+                    "pool_sahibi": "LPR"
+                  },
+                  "agirlik_kg": 23,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 4000,
+                    "raf": 1000
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3
+                    },
+                    "bloklar": {
+                      "adet": 9
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori_id": "NA",
+      "ad": "Kuzey Amerika Ekosistemi",
+      "aciklama": "GMA, CHEP (NA), CPC",
+      "standartlar": [
+        {
+          "standart_id": "GMA",
+          "ad": "GMA Palet Standardı",
+          "modeller": [
+            {
+              "model_id": "GMA_48x40",
+              "ad": "GMA 48x40",
+              "olcu": {
+                "u": 1219,
+                "g": 1016,
+                "y": 140
+              },
+              "kullanim": {
+                "tip": [
+                  "cok_kullanimlik"
+                ],
+                "sektor": [
+                  "perakende",
+                  "gida"
+                ]
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "GMA_STRINGER_AHSAP",
+                  "malzeme": "ahsap",
+                  "yapi_alt_tipi": "stringer_2_yon",
+                  "agirlik_kg": 20,
+                  "kapasite_kg": {
+                    "dinamik": 1200,
+                    "statik": 3000,
+                    "raf": 700
+                  },
+                  "teknik": {
+                    "ust_tablo": {
+                      "tahta_sayisi": 5,
+                      "genislik_standardi": 100,
+                      "kalinlik": 19
+                    },
+                    "kirisler": {
+                      "adet": 3,
+                      "olcu": {
+                        "u": 1219,
+                        "g": 38,
+                        "y": 89
+                      }
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3
+                    }
+                  }
+                },
+                {
+                  "varyant_id": "GMA_BLOCK_4WAY",
+                  "malzeme": "ahsap",
+                  "yapi_alt_tipi": "bloklu_4_yon",
+                  "agirlik_kg": 23,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 3500,
+                    "raf": 900
+                  },
+                  "teknik": {
+                    "bloklar": {
+                      "adet": 9
+                    },
+                    "ust_tablo": {
+                      "tahta_sayisi": 7
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 5
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "standart_id": "CPC",
+          "ad": "CPC (Canadian Pallet Council)",
+          "modeller": [
+            {
+              "model_id": "CPC_1200x1000",
+              "ad": "CPC 1200x1000",
+              "olcu": {
+                "u": 1200,
+                "g": 1000,
+                "y": 140
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "CPC_1200x1000_AHSAP",
+                  "malzeme": "ahsap",
+                  "kullanim": {
+                    "havuz": true,
+                    "pool_sahibi": "CPC"
+                  },
+                  "agirlik_kg": 24,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 3500,
+                    "raf": 1000
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3
+                    },
+                    "bloklar": {
+                      "adet": 9
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "standart_id": "CHEP",
+          "ad": "CHEP Pooling",
+          "modeller": [
+            {
+              "model_id": "CHEP_EU_1200x1000",
+              "ad": "CHEP EU 1200x1000",
+              "olcu": {
+                "u": 1200,
+                "g": 1000,
+                "y": 150
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "CHEP_EU_1200x1000_AHSAP",
+                  "malzeme": "ahsap",
+                  "kullanim": {
+                    "havuz": true,
+                    "pool_sahibi": "CHEP"
+                  },
+                  "agirlik_kg": 25,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 4000,
+                    "raf": 1000
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3
+                    },
+                    "bloklar": {
+                      "adet": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "model_id": "CHEP_US_48x40",
+              "ad": "CHEP US 48x40",
+              "olcu": {
+                "u": 1219,
+                "g": 1016,
+                "y": 150
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "CHEP_US_BLOCK",
+                  "malzeme": "ahsap",
+                  "kullanim": {
+                    "havuz": true,
+                    "pool_sahibi": "CHEP"
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon"
+                  },
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 4000,
+                    "raf": 900
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori_id": "ASIA",
+      "ad": "Asya Ekosistemi",
+      "aciklama": "JIS ve bölgesel kare palet ölçüsü",
+      "standartlar": [
+        {
+          "standart_id": "JIS",
+          "ad": "JIS Z 0604",
+          "modeller": [
+            {
+              "model_id": "JIS_1100x1100",
+              "ad": "Asya Paleti 1100x1100",
+              "olcu": {
+                "u": 1100,
+                "g": 1100,
+                "y": 144
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "JIS_AHSAP",
+                  "malzeme": "ahsap",
+                  "agirlik_kg": 23,
+                  "kapasite_kg": {
+                    "dinamik": 1200,
+                    "statik": 3000,
+                    "raf": 800
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3
+                    }
+                  }
+                },
+                {
+                  "varyant_id": "JIS_PLASTIK",
+                  "malzeme": "plastik",
+                  "teknik": {
+                    "yapi_tipi": "kapali_govde_4_yon",
+                    "ust_tablo": {
+                      "tip": "kapali"
+                    },
+                    "alt_tablo": {
+                      "tip": "tam_ayak"
+                    }
+                  },
+                  "uyumluluk": {
+                    "gida_hijyen": "yuksek"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori_id": "INTL",
+      "ad": "Uluslararası/Genel",
+      "aciklama": "ISO ve hava kargo ULD çözümleri",
+      "standartlar": [
+        {
+          "standart_id": "ISO6780",
+          "ad": "ISO 6780",
+          "modeller": [
+            {
+              "model_id": "ISO_1200x1000",
+              "ad": "ISO 1200x1000",
+              "olcu": {
+                "u": 1200,
+                "g": 1000,
+                "y": 144
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "ISO_1200x1000_AHSAP",
+                  "malzeme": "ahsap",
+                  "kullanim": {
+                    "havuz": false
+                  },
+                  "agirlik_kg": 23,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 4000,
+                    "raf": 1000
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3
+                    },
+                    "bloklar": {
+                      "adet": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "model_id": "ISO_1200x800",
+              "ad": "ISO 1200x800",
+              "olcu": {
+                "u": 1200,
+                "g": 800,
+                "y": 144
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "ISO_1200x800_AHSAP",
+                  "malzeme": "ahsap",
+                  "kullanim": {
+                    "havuz": false
+                  },
+                  "agirlik_kg": 22,
+                  "kapasite_kg": {
+                    "dinamik": 1400,
+                    "statik": 3800,
+                    "raf": 900
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3
+                    },
+                    "bloklar": {
+                      "adet": 9
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "model_id": "ISO_1000x1200",
+              "ad": "ISO 1000x1200",
+              "olcu": {
+                "u": 1000,
+                "g": 1200,
+                "y": 144
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "ISO_1000x1200_AHSAP",
+                  "malzeme": "ahsap",
+                  "kullanim": {
+                    "havuz": false
+                  },
+                  "agirlik_kg": 24,
+                  "kapasite_kg": {
+                    "dinamik": 1600,
+                    "statik": 4200,
+                    "raf": 1100
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3
+                    },
+                    "bloklar": {
+                      "adet": 9
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "standart_id": "IATA_ULD",
+          "ad": "IATA / ULD Hava Kargo Paletleri",
+          "modeller": [
+            {
+              "model_id": "ULD_AKE_TIP",
+              "ad": "ULD Palet/Taban (AKE ör.)",
+              "olcu": {
+                "u": 1130,
+                "g": 1130,
+                "y": 40
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "ULD_ALUMINYUM",
+                  "malzeme": "aluminyum",
+                  "kapasite_kg": {
+                    "dinamik": 1000,
+                    "statik": 1500
+                  },
+                  "teknik": {
+                    "yapi_tipi": "kaynakli_cerceve",
+                    "ust_tablo": {
+                      "tip": "kapali_sac"
+                    },
+                    "alt_tablo": {
+                      "tip": "kapali_sac"
+                    }
+                  },
+                  "uyumluluk": {
+                    "iata": true,
+                    "gida_hijyen": "yuksek"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kategori_id": "OZEL",
+      "ad": "Özel Kullanımlar",
+      "aciklama": "Display/half palet ve tek kullanımlık çözümler",
+      "standartlar": [
+        {
+          "standart_id": "DISPLAY",
+          "ad": "Teşhir / Display Paletleri",
+          "modeller": [
+            {
+              "model_id": "DISPLAY_600x400",
+              "ad": "Display 600x400",
+              "olcu": {
+                "u": 600,
+                "g": 400,
+                "y": 120
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "DISPLAY_KARTON",
+                  "malzeme": "karton",
+                  "kullanim": {
+                    "tip": [
+                      "tek_kullanimlik"
+                    ],
+                    "sektor": [
+                      "perakende_teșhir"
+                    ]
+                  },
+                  "kapasite_kg": {
+                    "dinamik": 200,
+                    "statik": 400
+                  },
+                  "teknik": {
+                    "yapi_tipi": "kanal_destekli_2_yon"
+                  }
+                }
+              ]
+            },
+            {
+              "model_id": "HALF_EURO_800x600",
+              "ad": "Half Palet 800x600",
+              "olcu": {
+                "u": 800,
+                "g": 600,
+                "y": 140
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "HALF_AHSAP",
+                  "malzeme": "ahsap",
+                  "kapasite_kg": {
+                    "dinamik": 500,
+                    "statik": 1000,
+                    "raf": 300
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 2
+                    }
+                  }
+                },
+                {
+                  "varyant_id": "HALF_PLASTIK",
+                  "malzeme": "plastik",
+                  "kapasite_kg": {
+                    "dinamik": 450,
+                    "statik": 900,
+                    "raf": 250
+                  },
+                  "teknik": {
+                    "yapi_tipi": "kapali_govde_4_yon"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "referanslar": {
+    "uyumluluk": {
+      "ispm15": "Ahşap paletlerde ihracat için ısıl işlem/ damga gereği.",
+      "gida_hijyen": "Plastik/kapalı yüzey önerilir; ahşapta risk orta-yüksek."
+    },
+    "sozluk": {
+      "bloklu_4_yon": "9 bloklu, dört yönden forklift girişi.",
+      "stringer_2_yon": "3 kirişli, iki yönden giriş (bazı varyantlarda delikle 4-yön).",
+      "tam_ayak": "Plastik enjeksiyon paletlerde alt yüzeyin sürekli ayaklı formu."
+    },
+    "index_onerileri": [
+      "kategori_id",
+      "standartlar.standart_id",
+      "standartlar.modeller.model_id",
+      "standartlar.modeller.varyantlar.varyant_id",
+      "standartlar.modeller.olcu.u",
+      "standartlar.modeller.olcu.g",
+      "standartlar.modeller.varyantlar.malzeme"
+    ]
+  }
+}

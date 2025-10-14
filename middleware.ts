@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { authMiddleware, adminMiddleware, apiAuthMiddleware } from '@/packages/middleware/auth';
+import { authMiddleware, apiAuthMiddleware } from '@/packages/middleware/auth';
+import { adminMiddleware } from '@/packages/middleware/admin';
 
 export async function middleware(request: NextRequest) {
   // Auth middleware

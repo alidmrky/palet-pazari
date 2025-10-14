@@ -1,7 +1,8 @@
 // User types and interfaces for client-side usage
 export enum UserType {
   INDIVIDUAL = 'individual',
-  COMPANY = 'company'
+  COMPANY = 'company',
+  ADMIN = 'admin'
 }
 
 // Bireysel kullanıcı bilgileri

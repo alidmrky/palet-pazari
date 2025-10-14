@@ -129,15 +129,15 @@ UserLoginSchema.pre('save', function(next) {
   next();
 });
 
-// Log database'de model oluştur
-let UserLoginModel: mongoose.Model<IUserLogin>;
+    // Aynı database'de model oluştur
+    let UserLoginModel: mongoose.Model<IUserLogin>;
 
-export const UserLogin = async () => {
-  if (!UserLoginModel) {
-    await connectToLogMongoDB();
-    UserLoginModel = mongoose.models.UserLogin || mongoose.model<IUserLogin>('UserLogin', UserLoginSchema);
-  }
-  return UserLoginModel;
-};
+    export const UserLogin = async () => {
+      if (!UserLoginModel) {
+        await connectToLogMongoDB();
+        UserLoginModel = mongoose.models.UserLogin || mongoose.model<IUserLogin>('UserLogin', UserLoginSchema);
+      }
+      return UserLoginModel;
+    };
 
 export default UserLogin;

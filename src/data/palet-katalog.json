@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "versiyon": "1.0",
+    "olusturma_tarihi": "2025-10-14",
+    "olcu_birimleri": "mm, kg",
+    "aciklama": "Lojistik palet katalogu: bölge→standart→model→varyant→teknik detaylar."
+  },
+  "kategoriler": [
+    {
+      "kategori_id": "EU",
+      "ad": "Avrupa Ekosistemi",
+      "aciklama": "EPAL/ EUR standartları ve Avrupa perakende ekosistemi",
+      "standartlar": [
+        {
+          "standart_id": "EPAL",
+          "ad": "EPAL / EUR Standartları",
+          "yonetici_kurum": "European Pallet Association (EPAL)",
+          "notlar": "ISPM 15 ısıl işlem; kalite damgalı.",
+          "modeller": [
+            {
+              "model_id": "EUR1",
+              "ad": "Euro Palet (EUR 1)",
+              "olcu": {
+                "uzunluk": 1200,
+                "genislik": 800,
+                "yukseklik": 144
+              },
+              "kullanim": {
+                "havuz": false,
+                "tip": [
+                  "cok_kullanimlik"
+                ],
+                "sektor": [
+                  "perakende",
+                  "FMCG",
+                  "genel_lojistik"
+                ]
+              },
+              "varyantlar": [
+                {
+                  "varyant_id": "EUR1_AHSAP_STANDART",
+                  "malzeme": "ahsap",
+                  "yuzey": "pürüzlü",
+                  "agirlik_kg": 22,
+                  "kapasite_kg": {
+                    "dinamik": 1500,
+                    "statik": 4000,
+                    "raf": 1000
+                  },
+                  "teknik": {
+                    "yapi_tipi": "bloklu_4_yon",
+                    "ust_tablo": {
+                      "tahta_sayisi": 5,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 100,
+                          "kalinlik": 22,
+                          "konum": "iç_sag"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ],
+                      "tahta_araliklari": [
+                        0,
+                        120,
+                        120,
+                        120
+                      ]
+                    },
+                    "alt_tablo": {
+                      "tahta_sayisi": 3,
+                      "tahtalar": [
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sol"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "orta"
+                        },
+                        {
+                          "genislik": 145,
+                          "kalinlik": 22,
+                          "konum": "kenar_sag"
+                        }
+                      ]
+                    },
+                    "bloklar": {
+                      "adet": 9,
+                      "olcu": {
+                        "uzunluk": 100,
+                        "genislik": 145,
+                        "yukseklik": 78
+                      },
+                      "dizilim": "3x3"
+                    },
+                    "civi": {
+                      "adet": 78,
+                      "tip": "spiral"
+                    },
+                    "forklift_acikliklari": {
+                      "sol_sag_yukseklik": 100,
+                      "on_arka_yukseklik": 90
+                    },
+                    "toleranslar": {
+                      "uzunluk": "±5",
+                      "genislik": "±3",
+                      "yukseklik": "±3"
+                    }
+                  },
+                  "uyumluluk": {
+                    "ispm15": true,
+                    "gida_hijyen": "orta"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "referanslar": {
+    "uyumluluk": {
+      "ispm15": "Ahşap paletlerde ihracat için ısıl işlem/ damga gereği.",
+      "gida_hijyen": "Plastik/kapalı yüzey önerilir; ahşapta risk orta-yüksek."
+    },
+    "sozluk": {
+      "bloklu_4_yon": "9 bloklu, dört yönden forklift girişi.",
+      "stringer_2_yon": "3 kirişli, iki yönden giriş (bazı varyantlarda delikle 4-yön).",
+      "tam_ayak": "Plastik enjeksiyon paletlerde alt yüzeyin sürekli ayaklı formu."
+    },
+    "index_onerileri": [
+      "kategori_id",
+      "standartlar.standart_id",
+      "standartlar.modeller.model_id",
+      "standartlar.modeller.varyantlar.varyant_id",
+      "standartlar.modeller.olcu.uzunluk",
+      "standartlar.modeller.olcu.genislik",
+      "standartlar.modeller.varyantlar.malzeme"
+    ]
+  }
+}
+

@@ -46,7 +46,8 @@ export async function writeLog(data: LogData): Promise<void> {
       }
     }
 
-    const log = new Log({
+    const LogModel = await Log();
+    const log = new LogModel({
       ...data,
       userId: validUserId,
       createdAt: new Date()
@@ -225,8 +226,8 @@ export async function logSecurityAlert(data: {
   details?: any;
 }): Promise<void> {
   const level = data.severity === 'critical' ? LogLevel.FATAL :
-                data.severity === 'high' ? LogLevel.ERROR :
-                data.severity === 'medium' ? LogLevel.WARN : LogLevel.INFO;
+    data.severity === 'high' ? LogLevel.ERROR :
+      data.severity === 'medium' ? LogLevel.WARN : LogLevel.INFO;
 
   await writeLog({
     level,

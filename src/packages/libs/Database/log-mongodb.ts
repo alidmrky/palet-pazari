@@ -1,10 +1,11 @@
 import mongoose from 'mongoose';
+import { MONGODB_URI } from '@/configs/envs';
 
 // Log MongoDB bağlantı durumunu takip etmek için
 let isLogConnected = false;
 
 /**
- * Log MongoDB'ye bağlan
+ * Log MongoDB'ye bağlan (aynı database, farklı collection'lar)
  * @returns Promise<boolean> - Bağlantı başarılı ise true
  */
 export async function connectToLogMongoDB(): Promise<boolean> {
@@ -15,25 +16,16 @@ export async function connectToLogMongoDB(): Promise<boolean> {
       return true;
     }
 
-    // Log veritabanı URI'si
-    const LOG_MONGODB_URI = process.env.LOG_MONGODB_URI || 'mongodb://localhost:27017/palet-pazari-log';
-
-    // Mevcut bağlantıyı temizle
-    if (mongoose.connection.readyState !== 0) {
-      await mongoose.disconnect();
-    }
-
-    // Yeni bağlantı kur
-    await mongoose.connect(LOG_MONGODB_URI, {
-      // Modern mongoose için gerekli ayarlar
+    // Aynı database'i kullan (palet-pazari)
+    await mongoose.connect(MONGODB_URI, {
       bufferCommands: false,
       maxPoolSize: 10,
       serverSelectionTimeoutMS: 5000,
-      socketTimeoutMS: 45000,
+      socketTimeoutMS: 45000
     });
 
     isLogConnected = true;
-    console.log('✅ Log MongoDB bağlantısı başarılı:', LOG_MONGODB_URI);
+    console.log('✅ Log MongoDB bağlantısı başarılı:', MONGODB_URI);
     return true;
   } catch (error) {
     console.error('❌ Log MongoDB bağlantı hatası:', error);
